@@ -300,6 +300,7 @@ void tvirose(){
 		printf("\tATENÇÃO: Você possui alergia a um dos medicamentos!");
 		printf("\t-------------------------------------------------------\n\n");
 	
+	}
 }
 
 void tgripe(){
