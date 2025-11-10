@@ -94,6 +94,7 @@ void sintomas(){
 			qgripe = qgripe + 1;
             	qdengue = qdengue + 1;
             	qcovid = qcovid + 1;
+            	cont = cont + 1;
 		}
 	}
 	
@@ -328,18 +329,24 @@ int main(){
     sintomas();
     
     if(denHemorragica > 0){
-        tdengue_hemorragica();
+    		tdengue_hemorragica();
+    		
     }else if(qcovid >= 4){
-        tcovid();
+    		tcovid();
+    		
     }else if(qdengue >= 5){
-        tdengue();
+          tdengue();
+          
     }else if (cont >= 3){
-        tvirose();
+    		tvirose();
+    		
     }else if(qgripe >= 3){
-        tgripe();
+    		tgripe();
+    		
     }else{
-        printf("Diagnóstico: Não foi possível determinar. Procure um médico se os sintomas persistirem.\n");
+    		printf("Diagnóstico: Não foi possível determinar.\n");
     }
+
     
     system("pause");
 }
